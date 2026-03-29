@@ -569,6 +569,11 @@ a {
   gap: 1.5rem;
 }
 
+.classes__cta {
+  margin-top: 2.5rem;
+  text-align: center;
+}
+
 .class-card {
   background: var(--card);
   border: 1px solid var(--border);
