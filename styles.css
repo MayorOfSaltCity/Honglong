@@ -4,6 +4,36 @@
              --mid  #1A1A1A  |  --light #F5F0E8
    ═══════════════════════════════════════════════════════════════════ */
 
+/* ─── SELF-HOSTED CHINESE FONT (Noto Serif SC subset) ───────────────
+   Subset covers every CJK character used on this site (~62 KB each).
+   Ensures Chinese text renders even when the Google Fonts CDN is
+   blocked (ad-blockers, firewalls, China, offline).
+   ─────────────────────────────────────────────────────────────────── */
+@font-face {
+  font-family: 'Noto Serif SC';
+  font-style:  normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('fonts/NotoSerifSC-Regular-subset.woff2') format('woff2');
+  unicode-range: U+3000-303F, U+4E00-9FFF, U+FF00-FFEF;
+}
+@font-face {
+  font-family: 'Noto Serif SC';
+  font-style:  normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url('fonts/NotoSerifSC-Bold-subset.woff2') format('woff2');
+  unicode-range: U+3000-303F, U+4E00-9FFF, U+FF00-FFEF;
+}
+@font-face {
+  font-family: 'Noto Serif SC';
+  font-style:  normal;
+  font-weight: 900;
+  font-display: swap;
+  src: url('fonts/NotoSerifSC-Bold-subset.woff2') format('woff2');
+  unicode-range: U+3000-303F, U+4E00-9FFF, U+FF00-FFEF;
+}
+
 /* ─── RESET & BASE ────────────────────────────────────────────────── */
 *, *::before, *::after {
   box-sizing: border-box;
@@ -25,8 +55,8 @@
   --text:   #E8E0D0;
 
   --font-serif: 'Cinzel', 'Georgia', serif;
-  --font-zh:    'Noto Serif SC', 'STSong', serif;
-  --font-body:  'Inter', system-ui, sans-serif;
+  --font-zh:    'Noto Serif SC', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', 'SimSun', 'STSong', 'WenQuanYi Micro Hei', serif;
+  --font-body:  'Inter', 'PingFang SC', 'Microsoft YaHei', system-ui, sans-serif;
 
   --radius:  6px;
   --radius-lg: 12px;
