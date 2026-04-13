@@ -56,7 +56,7 @@
 
   --font-serif: 'Cinzel', 'Georgia', serif;
   --font-zh:    'Noto Serif SC', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', 'SimSun', 'STSong', 'WenQuanYi Micro Hei', serif;
-  --font-body:  'Inter', 'PingFang SC', 'Microsoft YaHei', system-ui, sans-serif;
+  --font-body:  'Inter', 'Noto Serif SC', 'PingFang SC', 'Microsoft YaHei', system-ui, sans-serif;
 
   --radius:  6px;
   --radius-lg: 12px;
@@ -358,6 +358,7 @@ a {
 
 .hero__tagline {
   font-size: 1rem;
+  font-family: var(--font-zh);
   color: var(--muted);
   margin-bottom: 2.5rem;
   opacity: 0;
